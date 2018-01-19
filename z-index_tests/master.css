@@ -1,0 +1,27 @@
+.hide {
+  height: 500px;
+  width: 500px;
+  background-color: #3c3c3c;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hide:hover{
+  background-color: #FFFFFF;
+  z-index: 0;
+}
+
+.container:hover + .hide{
+  z-index: 0;
+}
+
+.container {
+  z-index: 1;
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  position: absolute;
+  right: 400px;
+}
