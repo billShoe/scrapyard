@@ -16,14 +16,36 @@
     <input type="checkbox" id="hide-3">
     <label for="hide-3">Slide 3</label>
 
-    <div class="slide-1">
-      <h1 class="white">Using z-index in CSS</h1>
+    <div class="slide-1 title">
+        <h1 class="dark">Using z-index in CSS</h1>
     </div>
+
     <div class="slide-2">
-      <h1 class="white">What is z-index?</h1>
+      <h1 class="dark">What is z-index?</h1>
+      <h2 class="dark">Z-index defines the order of which elements on the page are stacked on top of each other</h2>
+      <div class="text-box">
+        <ol>By default, elements are shown in this order:
+        <li>Background and root elements.
+            <li>Non-positioned elements in order of appearance on the HTML.
+            <li>Positioned elements in order of appearance on the HTML.
+        <div class="square-demo">
+          <div class="square-1"><b>
+            Div 1: Position static
+          </b></div>
+          <div class="square-2"><b>
+            Div 2: Position relative
+            <br><span id="sq2">z-index: 9001<span>
+          </b></div>
+          <div class="square-3"><b>
+            Div 3: Position relative
+          </b></div>
+        </div>
+      </div>
+
     </div>
+
     <div class="slide-3">
-      <h1 class="white">How to use z-index</h1>
+      <h1 class="dark">How to use z-index</h1>
     </div>
   </body>
 </html>
