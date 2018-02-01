@@ -131,6 +131,7 @@ label[for=hide-2]{
   background-color: LightGreen;
   border: 3px dashed green;
   opacity: 0.7;
+  overflow: hidden;
 }
 
 #sq2 {
@@ -218,4 +219,41 @@ label[for=reveal]{
   opacity: 0.7;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+}
+
+/* Mobile Friendly Shenanigans */
+
+@media only screen and (max-width: 600px){
+  .square-1 {
+    width: 200px;
+    height: 150px;
+  }
+
+  .square-2 {
+    width: 200px;
+    height: 150px;
+    left: 50px;
+  }
+
+  .square-3 {
+    width: 200px;
+    height: 100px;
+    left: 20px;
+    bottom: 55px;
+  }
+}
+
+@media only screen and (max-height: 600px){
+  .square-1,  .square-2, .square-3 {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+.debug {
+  z-index: 9001;
 }
